@@ -14,6 +14,6 @@ routes.use("/pizzas/tamanhos", TamanhosRoutes);
 
 routes.use("/lanches", LanchesRoutes);
 
-routes.use("/", (req, res) => res.json("API Site Pizzaria"));
+routes.use("/", (req, res) => res.send("<h1>Olá mundo</h1>"));
 
 export default routes;
