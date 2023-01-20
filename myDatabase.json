@@ -1,0 +1,2529 @@
+{
+    "bebidas": [
+        {
+            "nome": "refrigerante pepsi 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagem-url": "https://nutripao.com/wp-content/uploads/2022/08/Refrigerante-Pepsi-Cola-1-Litro-Garrafa.png"
+        },
+        {
+            "nome": "refrigerante antárctica 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagem-url": "https://deskontao.agilecdn.com.br/3323_1.jpg"
+        },
+        {
+            "nome": "refrigerante coca cola 1l",
+            "valor": 7,
+            "disponivel": true,
+            "imagem-url": "https://t00987.vtexassets.com/arquivos/ids/159045/FRENTE.jpg"
+        },
+        {
+            "nome": "refrigerante coca zero 1l",
+            "valor": 7,
+            "disponivel": true,
+            "imagem-url": "https://www.varanda.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/e/ref-coca-cola-1l-zero-7894900701715.jpg"
+        },
+        {
+            "nome": "refrigerante sukita laranja 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagem-url": "https://deskontao.agilecdn.com.br/9690_1.jpg"
+        },
+        {
+            "nome": "refrigerante kuat 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagem-url": "https://www.bernardaoemcasa.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/i/m/images_1__3.jpg"
+        },
+        {
+            "nome": "refrigerante pepsi 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagem-url": "https://i.pinimg.com/originals/e2/dd/c3/e2ddc3a3c22a5140c2ef1d7c84123d96.png"
+        },
+        {
+            "nome": "refrigerante pepsi zero 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagem-url": "https://supernossoio.vtexassets.com/arquivos/ids/192291/Refrigerante-Pepsi-Cola-Zero-Lata-350-ml.jpg"
+        },
+        {
+            "nome": "refrigerante coca cola 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagem-url": "https://marketplace.loji.com.br/storage/uploads/eMMVwSmaZgikU93FovLmyiRy2zlfiK5BD5od5Gme.png"
+        },
+        {
+            "nome": "refrigerante coca zero 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagem-url": "http://d2r9epyceweg5n.cloudfront.net/stores/001/043/122/products/coca-zero-3501-d10073d7379c4514b415698463221633-640-0.png"
+        },
+        {
+            "nome": "refrigerante antárctica 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagem-url": "https://cdn.lojazmart.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/l/i/linha51_6.jpg"
+        },
+        {
+            "nome": "cerveja itaipava 350ml",
+            "valor": 3.5,
+            "disponivel": true,
+            "imagem-url": "https://m.media-amazon.com/images/I/51kyB5eg4CL._AC_SX425_.jpg"
+        },
+        {
+            "nome": "cerveja DEVASSA PURO MALTE 350ml",
+            "valor": 3.5,
+            "disponivel": true,
+            "imagem-url": "https://loja05.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/4/1433962_2.jpg"
+        },
+        {
+            "nome": "cerveja PETRA 350ml",
+            "valor": 3.5,
+            "disponivel": true,
+            "imagem-url": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/88163-cerveja-petra-puro-malte-lata-350ml.jpg"
+        },
+        {
+            "nome": "agua mineral 500ml",
+            "valor": 2,
+            "disponivel": true,
+            "imagem-url": "https://hiperideal.vteximg.com.br/arquivos/ids/188562/127791.jpg"
+        },
+        {
+            "nome": "agua com gas 500ml",
+            "valor": 3,
+            "disponivel": true,
+            "imagem-url": "https://hiperideal.vteximg.com.br/arquivos/ids/188566-1000-1000/172327.jpg"
+        }
+    ],
+    "lanches": [
+        {
+            "nome": "baurú de queijo e presunto",
+            "valor": 5,
+            "disponivel": true,
+            "imagem-url": "https://amopaocaseiro.com.br/wp-content/uploads/2021/01/receita-joelho-ou-enroladinho.jpg"
+        },
+        {
+            "nome": "baurú de carne",
+            "valor": 5,
+            "disponivel": true,
+            "imagem-url": "https://i0.wp.com/porkworld.com.br/wp-content/uploads/2022/03/sem-titulo-6.png"
+        },
+        {
+            "nome": "baurú de frango",
+            "valor": 5,
+            "disponivel": true,
+            "imagem-url": "https://i.ibb.co/gr0fkqq/44639223-699877640375073-7236780389203705856-n.jpg"
+        },
+        {
+            "nome": "baurú de calabresa",
+            "valor": 5,
+            "disponivel": true,
+            "imagem-url": "http://padarianutrivida.com.br/web/image/product.template/4188/image_1024?unique=ac1be23"
+        }
+    ],
+    "pizzas": {
+        "sabores-grupos": [
+            {
+                "nome": "Tradicionais 👍",
+                "sabores": [
+                    {
+                        "nome": "Presunto 🐷",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Presunto",
+                            "Azeitonas",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Paulista 🇾🇪",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Presunto",
+                            "Frango",
+                            "Parmesão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Moda Verona 🫕",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Presunto",
+                            "Gorgonzola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Moda Da Casa 🏠",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Cebola",
+                            "Calabresa",
+                            "Presunto",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Grega 🏛️",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Frango",
+                            "Uva Passas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Frango 🐔",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Frango",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Delicia Da Bahia 🇱🇷",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Calabresa",
+                            "Frango",
+                            "Requeijão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Da Roça 🏜️",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Calabresa",
+                            "Requeijão",
+                            "Ovos",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Calabresa 🐷",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Cebola",
+                            "Calabresa",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Caipira 🌽",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Milho",
+                            "Tomate",
+                            "Frango",
+                            "Parmesão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Menina Bonita 💃🏾",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Presunto",
+                            "Uva Passas",
+                            "Molho Especial",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Agridoce 🍇",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Calabresa",
+                            "Uva Passas",
+                            "Requeijão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Charmosa 🐔",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Frango",
+                            "Agrião",
+                            "Manjericão",
+                            "Molho Especial",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Sulista ☃️",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Presunto",
+                            "Requeijão",
+                            "Barbecue",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Bolonhesa 🍝",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Carne Moída",
+                            "Batata Palha",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Baiana 🔥",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Cebola",
+                            "Calabresa",
+                            "Pimenta",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Portuguesa 🇵🇹",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Presunto",
+                            "Ovos",
+                            "Cebola",
+                            "Milho",
+                            "Ervilha",
+                            "Pimentão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nome": "Especiais 💥",
+                "sabores": [
+                    {
+                        "nome": "Americana 🇺🇸",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Bacon",
+                            "Tomate",
+                            "Ovos",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Do Chef 🧑‍🍳",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Bacon",
+                            "Frango",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Crocante 🥓",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Bacon",
+                            "Batata Palha",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Cubana 🇨🇺",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Calabresa",
+                            "Cebola",
+                            "Bacon",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 8
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 27
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 39
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Baconritos 🌮",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Doritos",
+                            "Bacon",
+                            "Requeijão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Frangoritos 🌯",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Doritos",
+                            "Frango",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Charque 🍖",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Carne de Sertão",
+                            "Requeijão",
+                            "Uva Passas",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 10
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 23
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 34
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 50
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "X-Burger 🍔",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Carne de Hambúrguer",
+                            "Molho Especial",
+                            "Tomate",
+                            "Milho",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "X-Egg 🍳",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Carne de Hambúrguer",
+                            "Molho Especial",
+                            "Ovos",
+                            "Milho",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nome": "Sem Carne 🙅‍♂️",
+                "sabores": [
+                    {
+                        "nome": "Mussarela 🧀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "2 Queijos 🧀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "3 Queijos 🧀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Parmesão",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "4 Queijos 🧀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Gorgonzola",
+                            "Provolone",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "5 Queijos 🧀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Gorgonzola",
+                            "Parmesão",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "6 Queijos 🧀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Cheddar",
+                            "Gorgonzola",
+                            "Parmesão",
+                            "Provolone",
+                            "Requeijão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 22
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 50
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Brasileira 🇧🇷",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Milho",
+                            "Ervilha",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Vegetariana 🥬",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Tomate Seco",
+                            "Rúcula",
+                            "Palmito",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Verde Floresta 🌳",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Rúcula",
+                            "Manjericão",
+                            "Agrião",
+                            "Azeite",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Espanhola 🇪🇸",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Tomate",
+                            "Parmesão",
+                            "Uva Passas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Batata Palha 🍟",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Batata Palha",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Alho & Óleo 🧄",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Alho Frito",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Pão de alho 🧄",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Creme de Alho",
+                            "Requeijão",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Napolitana 🧄",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Tomate",
+                            "Alho Frito",
+                            "Parmesão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Milho 🌽",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Milho",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Marguerita 🌿",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Manjericão",
+                            "Tomate",
+                            "Parmesão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Palmito 🌴",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Palmito",
+                            "Requeijão",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nome": "Doces 🍭",
+                "sabores": [
+                    {
+                        "nome": "Banana Nevada 🍌",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Banana",
+                            "Canela",
+                            "Leite Condensado"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Romeu E Julieta 👩‍❤️‍👨",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Goiabada",
+                            "Creme de Leite"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 15
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 40
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Brigadeiro 🍫",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Chocolate",
+                            "Granulado"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Passione 🍓",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Chocolate",
+                            "Morango",
+                            "Creme de Leite"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Havaiana 🍍",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Abacaxi",
+                            "Peito de Peru"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Prestígio 🥥",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Coco Ralado",
+                            "Chocolate",
+                            "Creme de Leite"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "M&Ms 🍩",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Chocolate",
+                            "M&M’s"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Paçoca 🥜",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Chocolate",
+                            "Paçoca"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 50
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 55
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nome": "Frutos do Mar 🏖️",
+                "sabores": [
+                    {
+                        "nome": "Tilápia 🐠",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Filé de Tilápia",
+                            "Rúcula",
+                            "Tomate Seco",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 65
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 78
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Sardinha 🐟",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Sardinha",
+                            "Tomate",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 20
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 38
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 43
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 48
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Camarão 🦐",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Camarão",
+                            "Requeijão",
+                            "Agrião",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 47
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 58
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 69
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 80
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Atum 🦈",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Cebola",
+                            "Azeitonas",
+                            "Atum",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 65
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Mediterrânea 🦀",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Kani Kama",
+                            "Palmito",
+                            "Manjericão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 47
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 58
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 69
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 80
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nome": "Gourmet 🧑‍🍳",
+                "sabores": [
+                    {
+                        "nome": "Pirão de Aipim 🥘",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Pirão de Aipim",
+                            "Carne do Sol",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 65
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Churrasco 🍖",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Churrasco Misto",
+                            "Cebola",
+                            "Molho Especial",
+                            "Azeite",
+                            "Barbecue",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 65
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 78
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Sertaneja 🏜️",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Carne Seca",
+                            "Banana da Terra",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 25
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 65
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Filé Mignon 🍖",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Filé Mignon",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 65
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 78
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Tropical 🍃",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Calabresa",
+                            "Palmito",
+                            "Manjericão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 18
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 24
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 46
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Pepperoni 🐷",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Pepperoni",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 65
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 78
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Baronesa 👑",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Peito de Peru",
+                            "Champignon",
+                            "Gorgonzola",
+                            "Alho Frito",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 65
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 78
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Romanesca 🏰",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Presunto",
+                            "Bacon",
+                            "Champignon",
+                            "Palmito",
+                            "Requeijão",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 30
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 55
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 65
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 78
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Toscana 🌶️",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Toscana",
+                            "Pimenta",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 18
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 24
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 46
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Salame 🐽",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Salame",
+                            "Molho Especial",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 22
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 33
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 44
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 49
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Peru 🦃",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Requeijão",
+                            "Peito de Peru",
+                            "Tomate",
+                            "Azeitonas",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 22
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 50
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Nordestina 🌅",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Carne do Sol",
+                            "Requeijão",
+                            "Cebola",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 22
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 50
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Mexicana 🇲🇽",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Ovos",
+                            "Bacon",
+                            "Pimenta",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 18
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 24
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 46
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Lombinho 🐖",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Lombinho",
+                            "Cheddar",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 22
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 50
+                            }
+                        ]
+                    },
+                    {
+                        "nome": "Bacon 🥓",
+                        "disponivel": true,
+                        "ingredientes": [
+                            "Mussarela",
+                            "Cebola",
+                            "Bacon",
+                            "Orégano"
+                        ],
+                        "valores": [
+                            {
+                                "tamanho": "Brotão",
+                                "valor": 22
+                            },
+                            {
+                                "tamanho": "Pequena",
+                                "valor": 35
+                            },
+                            {
+                                "tamanho": "Média",
+                                "valor": 40
+                            },
+                            {
+                                "tamanho": "Grande",
+                                "valor": 45
+                            },
+                            {
+                                "tamanho": "Família",
+                                "valor": 50
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "tamanhos": [
+            {
+                "nome": "BROTÃO",
+                "fatias": 4,
+                "tamanhoAprox": 15,
+                "visivel": false,
+                "maxSabores": 1
+            },
+            {
+                "nome": "PEQUENA",
+                "fatias": 4,
+                "tamanhoAprox": 25,
+                "visivel": true,
+                "maxSabores": 1
+            },
+            {
+                "nome": "MÉDIA",
+                "fatias": 6,
+                "tamanhoAprox": 30,
+                "visivel": true,
+                "maxSabores": 2
+            },
+            {
+                "nome": "GRANDE",
+                "fatias": 8,
+                "tamanhoAprox": 35,
+                "visivel": true,
+                "maxSabores": 3
+            },
+            {
+                "nome": "FAMÍLIA",
+                "fatias": 12,
+                "tamanhoAprox": 40,
+                "visivel": true,
+                "maxSabores": 4
+            }
+        ]
+    }
+}
