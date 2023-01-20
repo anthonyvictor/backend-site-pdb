@@ -14,6 +14,6 @@ routes.use("/pizzas/tamanhos", TamanhosRoutes);
 
 routes.use("/lanches", LanchesRoutes);
 
-routes.use("/", (req, res) => res.send("<h1>Olá mundo</h1>"));
+routes.use("/", (req, res) => res.send({ message: "Site ON" }));
 
 export default routes;
