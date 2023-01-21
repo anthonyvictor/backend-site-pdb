@@ -4,103 +4,103 @@
             "nome": "refrigerante pepsi 1l",
             "valor": 6,
             "disponivel": true,
-            "imagemUrl": "https://nutripao.com/wp-content/uploads/2022/08/Refrigerante-Pepsi-Cola-1-Litro-Garrafa.png"
+            "imagemUrl": "https://i.ibb.co/9VtV0CK/Refrigerante-Pepsi-Cola-1-Litro-Garrafa.png"
         },
         {
             "nome": "refrigerante antárctica 1l",
             "valor": 6,
             "disponivel": true,
-            "imagemUrl": "https://deskontao.agilecdn.com.br/3323_1.jpg"
+            "imagemUrl": "https://i.ibb.co/djLfgFD/3323-1.jpg"
         },
         {
             "nome": "refrigerante coca cola 1l",
             "valor": 7,
             "disponivel": true,
-            "imagemUrl": "https://t00987.vtexassets.com/arquivos/ids/159045/FRENTE.jpg"
+            "imagemUrl": "https://i.ibb.co/XpRF5ry/FRENTE.jpg"
         },
         {
             "nome": "refrigerante coca zero 1l",
             "valor": 7,
             "disponivel": true,
-            "imagemUrl": "https://www.varanda.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/r/e/ref-coca-cola-1l-zero-7894900701715.jpg"
+            "imagemUrl": "https://i.ibb.co/tCBZTdd/ref-coca-cola-1l-zero-7894900701715.jpg"
         },
         {
             "nome": "refrigerante sukita laranja 1l",
             "valor": 6,
             "disponivel": true,
-            "imagemUrl": "https://deskontao.agilecdn.com.br/9690_1.jpg"
+            "imagemUrl": "https://i.ibb.co/bJTsgTX/9690-1.jpg"
         },
         {
             "nome": "refrigerante kuat 1l",
             "valor": 6,
             "disponivel": true,
-            "imagemUrl": "https://www.bernardaoemcasa.com.br/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/i/m/images_1__3.jpg"
+            "imagemUrl": "https://i.ibb.co/BGNn7vf/images-1-3.jpg"
         },
         {
             "nome": "refrigerante pepsi 350ml",
             "valor": 4,
             "disponivel": true,
-            "imagemUrl": "https://i.pinimg.com/originals/e2/dd/c3/e2ddc3a3c22a5140c2ef1d7c84123d96.png"
+            "imagemUrl": "https://i.ibb.co/1fftLc5/Pepsi-350ml.jpg"
         },
         {
             "nome": "refrigerante pepsi zero 350ml",
             "valor": 4,
             "disponivel": false,
-            "imagemUrl": "https://supernossoio.vtexassets.com/arquivos/ids/192291/Refrigerante-Pepsi-Cola-Zero-Lata-350-ml.jpg"
+            "imagemUrl": "https://i.ibb.co/nLTXCMy/Refrigerante-Pepsi-Cola-Zero-Lata-350-ml.webp"
         },
         {
             "nome": "refrigerante coca cola 350ml",
             "valor": 4,
             "disponivel": false,
-            "imagemUrl": "https://marketplace.loji.com.br/storage/uploads/eMMVwSmaZgikU93FovLmyiRy2zlfiK5BD5od5Gme.png"
+            "imagemUrl": "https://i.ibb.co/X5n5TCh/REFRIGERANTE-COCA-COLA-LATA-350-ML.png"
         },
         {
             "nome": "refrigerante coca zero 350ml",
             "valor": 4,
             "disponivel": true,
-            "imagemUrl": "http://d2r9epyceweg5n.cloudfront.net/stores/001/043/122/products/coca-zero-3501-d10073d7379c4514b415698463221633-640-0.png"
+            "imagemUrl": "https://i.ibb.co/bN2Sq0F/coca-zero-3501-d10073d7379c4514b415698463221633-640-0.png"
         },
         {
             "nome": "refrigerante antárctica 350ml",
             "valor": 4,
             "disponivel": true,
-            "imagemUrl": "https://cdn.lojazmart.com/media/catalog/product/cache/1/image/650x/040ec09b1e35df139433887a97daa66f/l/i/linha51_6.jpg"
+            "imagemUrl": "https://i.ibb.co/grz54KS/linha51-6.jpg"
         },
         {
             "nome": "cerveja itaipava 350ml",
             "valor": 3.5,
             "disponivel": true,
-            "imagemUrl": "https://m.media-amazon.com/images/I/51kyB5eg4CL._AC_SX425_.jpg"
+            "imagemUrl": "https://i.ibb.co/LtVKK0c/51ky-B5eg4-CL-AC-SX425.jpg"
         },
         {
             "nome": "cerveja schin 350ml",
             "valor": 3.5,
             "disponivel": true,
-            "imagemUrl": "https://www.schin.com.br/media/hb1nkjpp/schin_pilsen_lata_350ml.webp"
+            "imagemUrl": "https://i.ibb.co/4NSn0gh/schin-pilsen-lata-350ml.webp"
         },
         {
             "nome": "cerveja DEVASSA PURO MALTE 350ml",
             "valor": 3.5,
             "disponivel": true,
-            "imagemUrl": "https://loja05.bistek.com.br/media/catalog/product/cache/15b2f1f06e1cd470c80b1f3fd7ec8301/1/4/1433962_2.jpg"
+            "imagemUrl": "https://i.ibb.co/4R2BPKG/1433962-2.webp"
         },
         {
             "nome": "cerveja PETRA 350ml",
             "valor": 3.5,
             "disponivel": false,
-            "imagemUrl": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/88163-cerveja-petra-puro-malte-lata-350ml.jpg"
+            "imagemUrl": "https://i.ibb.co/bFf7gBk/88163-cerveja-petra-puro-malte-lata-350ml.jpg"
         },
         {
             "nome": "agua mineral 500ml",
             "valor": 2,
             "disponivel": true,
-            "imagemUrl": "https://hiperideal.vteximg.com.br/arquivos/ids/188562/127791.jpg"
+            "imagemUrl": "https://i.ibb.co/BwxxTYg/127791.png"
         },
         {
             "nome": "agua com gas 500ml",
             "valor": 3,
             "disponivel": true,
-            "imagemUrl": "https://hiperideal.vteximg.com.br/arquivos/ids/188566-1000-1000/172327.jpg"
+            "imagemUrl": "https://i.ibb.co/rx5hd6F/172327.png"
         }
     ],
     "lanches": [
