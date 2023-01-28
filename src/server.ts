@@ -11,5 +11,5 @@ app.use(cors());
 app.use("/", routes);
 
 app.listen(environments.Port, () =>
-	console.log(`✅ Server is running on port ${environments.Port}`),
+	console.info(`✅ Server is running on port ${environments.Port}`),
 );
