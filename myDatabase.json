@@ -2596,44 +2596,6 @@
                 "visivel": true,
                 "maxSabores": 4
             }
-        ],
-        "lanches": [
-            {
-                "nome": "baurú de queijo e presunto",
-                "valor": 5,
-                "disponivel": true,
-                "imagemUrl": "https://amopaocaseiro.com.br/wp-content/uploads/2021/01/receita-joelho-ou-enroladinho.jpg"
-            },
-            {
-                "nome": "baurú de carne",
-                "valor": 5,
-                "disponivel": true,
-                "imagemUrl": "https://i0.wp.com/porkworld.com.br/wp-content/uploads/2022/03/sem-titulo-6.png"
-            },
-            {
-                "nome": "baurú de frango",
-                "valor": 5,
-                "disponivel": true,
-                "imagemUrl": "https://i.ibb.co/gr0fkqq/44639223-699877640375073-7236780389203705856-n.jpg"
-            },
-            {
-                "nome": "baurú de frango com presunto",
-                "valor": 5,
-                "disponivel": true,
-                "imagemUrl": "https://i.ibb.co/gr0fkqq/44639223-699877640375073-7236780389203705856-n.jpg"
-            },
-            {
-                "nome": "baurú de calabresa",
-                "valor": 5,
-                "disponivel": true,
-                "imagemUrl": "http://padarianutrivida.com.br/web/image/product.template/4188/image_1024?unique=ac1be23"
-            },
-            {
-                "disponivel": true,
-                "imagemUrl": "https://amopaocaseiro.com.br/wp-content/uploads/2021/01/receita-joelho-ou-enroladinho.jpg",
-                "nome": "bauru de calabresa com frango",
-                "valor": 5
-            }
         ]
     },
     "enderecos": [

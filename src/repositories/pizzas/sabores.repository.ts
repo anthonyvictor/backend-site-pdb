@@ -12,10 +12,6 @@ export const saboresRepository = async (
 				Math.max(
 					...grupo.sabores.map(s => Math.max(...s.valores.map(v => v.valor))),
 				);
-			// .reduce(
-			// 	(max, curr) => max + Math.max(...curr.valores.map(v => v.valor)),
-			// 	0,
-			// );
 			const getMaiorValorSabor = (sabor: IPizzaSabor) =>
 				Math.max(...sabor.valores.map(v => v.valor));
 
@@ -37,6 +33,10 @@ export const saboresRepository = async (
 		} else if (from === "api") {
 			const { api } = await import("../../config/api");
 			const response = await api.get(`/pizzas/sabores-grupos${query && query}`);
+		} else if (from === "mongo") {
+			// const mongo = await import("../../config/mongoDatabase");
+			// const db = await mongo.getMongoConnection();
+			// console.log(db);
 		}
 	} catch (err) {
 		console.error("Error, failed to fetch!", (err as Error).message);
