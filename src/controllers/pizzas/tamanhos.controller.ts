@@ -2,11 +2,12 @@ import { Request, Response } from "express";
 import { IPizzaTamanho } from "../../types/pizza";
 import { Controller } from "..";
 import { v4 as uuidv4 } from "uuid";
+import { ITamanhosGetDTO } from "../../dtos/tamanhos/get";
 
 export class TamanhosController extends Controller<IPizzaTamanho> {
   get = async (req: Request, res: Response) => {
     try {
-      const data = await this.service.find();
+      const data = await this.service.find(req.query as ITamanhosGetDTO);
       res.json(data);
     } catch (e) {
       console.error(e);

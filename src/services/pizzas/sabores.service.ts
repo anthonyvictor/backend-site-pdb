@@ -8,14 +8,18 @@ import {
   sortGroupsByFlavoursLength,
   sortGroupsByMidValue,
 } from "../../util/services/sabores.util";
+import { ISaboresGetDTO } from "../../dtos/sabores/get";
 export class SaboresService extends Service<IPizzaSabor> {
   constructor(repo: Repo<IPizzaSabor>, private GruposRepo: Repo<IPizzaGrupo>) {
     super(repo);
   }
 
-  async find() {
+  async find({ id }: ISaboresGetDTO) {
+    const sabores = ((await this.repo.find()) as IPizzaSabor[]).filter((e) =>
+      id ? e.id === id : true
+    );
     const grupos = (await this.GruposRepo.find()) as IPizzaGrupo[];
-    const sabores = (await this.repo.find()) as IPizzaSabor[];
+
     return grupos
       .map((g) => ({
         ...g,
@@ -25,7 +29,8 @@ export class SaboresService extends Service<IPizzaSabor> {
           .sort(sortFlavoursByMidValue),
       }))
       .sort(sortGroupsByFlavoursLength)
-      .sort(sortGroupsByMidValue);
+      .sort(sortGroupsByMidValue)
+      .filter((g) => g.sabores.length > 0);
   }
   async create(item: IPizzaSabor) {
     const id = uuidv4();

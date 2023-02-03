@@ -2,11 +2,12 @@ import { Request, Response } from "express";
 import { IPizzaSabor } from "../../types/pizza";
 import { Controller } from "..";
 import { v4 as uuidv4 } from "uuid";
+import { ISaboresGetDTO } from "../../dtos/sabores/get";
 
 export class SaboresController extends Controller<IPizzaSabor> {
   get = async (req: Request, res: Response) => {
     try {
-      const data = await this.service.find();
+      const data = await this.service.find(req.query as ISaboresGetDTO);
       res.json(data);
     } catch (e) {
       console.error(e);
