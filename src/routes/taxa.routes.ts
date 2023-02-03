@@ -1,8 +1,19 @@
 import { Router } from "express";
-import { getTaxa } from "../services/taxa.service";
+import { TaxaController } from "../controllers/taxa.controller";
+import { makeTaxa } from "../factories/taxa.factory";
+import { EnderecosRepoApi } from "../repositories/api/enderecos.repository";
+import { TaxaRepoApi } from "../repositories/api/taxa.repository";
+import { TaxaService } from "../services/taxa.service";
 
-const TaxaRoutes = Router();
+// export const TaxaRoutes = makeTaxa();
 
-TaxaRoutes.get("/", getTaxa);
+const router = Router();
+const controller = new TaxaController(
+	new TaxaService(new TaxaRepoApi(), new EnderecosRepoApi()),
+);
+router.get("/", controller.get);
+router.post("/", controller.post);
+router.patch("/", controller.patch);
+router.delete("/", controller.delete);
 
-export default TaxaRoutes;
+export const TaxaRoutes = router;

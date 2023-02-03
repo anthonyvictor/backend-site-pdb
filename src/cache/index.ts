@@ -5,7 +5,7 @@ import { IPizzaGrupo, IPizzaTamanho } from "../types/pizza";
 
 export class Cache {
 	constructor() {
-		this.updateCache();
+		// this.updateCache();
 	}
 
 	lanches: IOutro[] = [];
@@ -14,15 +14,28 @@ export class Cache {
 	tamanhos: IPizzaTamanho[] = [];
 	grupos: IPizzaGrupo[] = [];
 
-	async updateCache() {
-		this.lanches = (await (await api.get("/lanches")).data) as IOutro[];
-		this.bebidas = (await (await api.get("/bebidas")).data) as IOutro[];
-		this.enderecos = (await (await api.get("/enderecos")).data) as IEndereco[];
-		this.tamanhos = (await (
-			await api.get("/pizzas/tamanhos")
-		).data) as IPizzaTamanho[];
-		this.grupos = (await (
-			await api.get("/pizzas/sabores-grupos")
-		).data) as IPizzaGrupo[];
+	async updateCache(
+		which?: "lanches" | "bebidas" | "enderecos" | "tamanhos" | "grupos",
+	) {
+		if (!which || which === "lanches")
+			this.lanches = (await (await api.get("/lanches")).data) as IOutro[];
+
+		if (!which || which === "bebidas")
+			this.bebidas = (await (await api.get("/bebidas")).data) as IOutro[];
+
+		if (!which || which === "enderecos")
+			this.enderecos = (await (
+				await api.get("/enderecos")
+			).data) as IEndereco[];
+
+		if (!which || which === "tamanhos")
+			this.tamanhos = (await (
+				await api.get("/pizzas/tamanhos")
+			).data) as IPizzaTamanho[];
+
+		if (!which || which === "grupos")
+			this.grupos = (await (
+				await api.get("/pizzas/grupos")
+			).data) as IPizzaGrupo[];
 	}
 }

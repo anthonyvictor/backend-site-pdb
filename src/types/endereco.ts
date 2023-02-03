@@ -1,12 +1,12 @@
 export interface IEndereco {
-	id: number;
+	id: string;
 	cep: string;
 	rua: string;
-	bairro: IBairro;
+	bairroId: string;
 	taxa: number;
 }
 
 export interface IBairro {
-	id: number;
+	id: string;
 	nome: string;
 }

@@ -1,8 +1,3 @@
-import { Router } from "express";
-import { getBairros } from "../services/bairros.service";
+import { makeBairros } from "../factories/bairros.factory";
 
-const BairrosRoutes = Router();
-
-BairrosRoutes.get("/", (req, res) => getBairros(req, res));
-
-export default BairrosRoutes;
+export const BairrosRoutes = makeBairros();

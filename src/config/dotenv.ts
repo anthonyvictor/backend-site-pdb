@@ -6,10 +6,7 @@ config({
 });
 
 export const environments = {
-	Port: process.env.APP_PORT as unknown as number | 5000,
-	DBHost: process.env.DB_HOST,
-	DBPort: process.env.DB_PORT as number | undefined,
-	DBUser: process.env.DB_USER,
-	DBPass: process.env.DB_PASS,
-	DBName: process.env.DB_NAME,
+	Port: process.env.APP_PORT as unknown as number,
+	apiURL: process.env.API_URL as string,
+	apiKey: process.env.API_KEY as string,
 };

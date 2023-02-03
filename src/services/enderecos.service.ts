@@ -1,21 +1,28 @@
-import { Request, Response } from "express";
-import { enderecosRepository } from "../repositories/enderecos.repository";
+import { Service } from ".";
+import { randomUUID } from "node:crypto";
 import { IEndereco } from "../types/endereco";
+import { IEnderecosGetDTO } from "../dtos/enderecos/get";
 
-export const getEnderecos = async (req: Request, res: Response) => {
-	try {
-		const { cep } = req.query as { cep?: string };
-		let enderecos: IEndereco[] = [];
-		enderecos = (await enderecosRepository("localdb"))
+export class EnderecosService extends Service<IEndereco> {
+	async find({ cep }: IEnderecosGetDTO): Promise<IEndereco[]> {
+		if (cep) cep = cep.replace(/[^0-9]/g, "");
+
+		const data = ((await this.repo.find()) as IEndereco[])
+			.filter(e => (cep ? e.cep === cep : true))
 			.sort((a, b) => (a.rua > b.rua ? 1 : -1))
 			.sort((a, b) => (a.taxa > b.taxa ? 1 : -1));
 
-		if (cep)
-			enderecos = enderecos.filter(e => e.cep === cep.replace(/[^0-9]/g, ""));
-
-		res.json({ enderecos });
-	} catch (e: any) {
-		console.error(e["message"]);
-		res.send({ taxa: 0 });
+		return data;
 	}
-};
+
+	async create(item: IEndereco) {
+		const id = randomUUID();
+		await this.repo.create({ ...item, id });
+	}
+	async update(itemId: string, item: IEndereco) {
+		await this.repo.update(itemId, item);
+	}
+	async delete(itemId: string) {
+		await this.repo.delete(itemId);
+	}
+}

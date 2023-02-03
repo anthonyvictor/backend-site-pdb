@@ -1,6 +1,10 @@
 import axios from "axios";
+import { environments } from "./dotenv";
 
 export const api = axios.create({
-	baseURL: process.env.API_URL,
-	headers: { "Content-Type": "application/json" },
+	baseURL: environments.apiURL,
+	headers: {
+		"Content-Type": "application/json",
+		Authorization: Buffer.from(environments.apiKey).toString("base64"),
+	},
 });

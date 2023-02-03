@@ -1,16 +1,3 @@
-import { Router } from "express";
-import {
-	getLanches,
-	patchLanches,
-	postLanches,
-} from "../services/lanches.service";
+import { makeLanches } from "../factories/lanches.factory";
 
-const LanchesRoutes = Router();
-
-LanchesRoutes.get("/", getLanches);
-
-LanchesRoutes.patch("/", patchLanches);
-
-LanchesRoutes.post("/", postLanches);
-
-export default LanchesRoutes;
+export const LanchesRoutes = makeLanches();

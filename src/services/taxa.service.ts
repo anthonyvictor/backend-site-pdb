@@ -1,22 +1,28 @@
-import { Request, Response } from "express";
-import { bairrosRepository } from "../repositories/bairros.repository";
-import { enderecosRepository } from "../repositories/enderecos.repository";
 import { IEndereco } from "../types/endereco";
 import { clearAddress } from "../util/format";
+import { Service } from ".";
+import { ITaxaGetDTO } from "../dtos/taxa/get";
+import { Repo } from "../repositories";
 
-interface ITaxaRouteGetRequest {
-	street?: string;
-	number?: number;
-	cep?: string;
-	place?: string;
-	reference?: string;
-	neighbourhood?: number;
-}
-
-export const getTaxa = async (req: Request, res: Response) => {
-	try {
+export class TaxaService extends Service<number> {
+	constructor(
+		protected repo: Repo<number>,
+		protected EnderecosRepo: Repo<IEndereco>,
+	) {
+		super(repo);
+	}
+	create(item: number): void {
+		throw new Error("Method not implemented.");
+	}
+	update(itemId: string, item: number): void {
+		throw new Error("Method not implemented.");
+	}
+	delete(itemId: string): void {
+		throw new Error("Method not implemented.");
+	}
+	async find(dto?: ITaxaGetDTO): Promise<number> {
 		const { street, number, cep, place, reference, neighbourhood } =
-			req.query as ITaxaRouteGetRequest;
+			dto as ITaxaGetDTO;
 
 		if (!street && !cep && !place && !number && !neighbourhood && !reference)
 			throw new Error("invalid address");
@@ -25,14 +31,14 @@ export const getTaxa = async (req: Request, res: Response) => {
 
 		const cleanedCep = String(cep).replace(/[^0-9]/, "");
 
+		const addresses = (await this.EnderecosRepo.find()) as IEndereco[];
+
 		if (Number(cleanedCep)) {
-			taxa = (await enderecosRepository("localdb")).find(
-				(x: IEndereco) => x.cep === cleanedCep,
-			)?.taxa;
+			taxa = addresses.find(x => {
+				return x.cep === cleanedCep;
+			})?.taxa;
 		} else {
 			const cleanedAddress = clearAddress(street ?? "");
-
-			const addresses = await enderecosRepository("localdb");
 
 			const filteredAddresses = addresses
 				.sort((a, b) => (a.taxa > b.taxa ? 1 : a.taxa < b.taxa ? -1 : 0))
@@ -41,9 +47,8 @@ export const getTaxa = async (req: Request, res: Response) => {
 					x.rua.replace(/ DO | DA | DE | DI /g, " ").includes(cleanedAddress),
 				);
 
-			// RECEBE AS TAXAS MAIS PRÓXIMAS AO ENDEREÇO SOLICITADO
 			const addressInNeighbourhood = addresses.filter(
-				x => x.bairro.id.toString() === neighbourhood?.toString(),
+				x => x.bairroId === neighbourhood?.toString(),
 			);
 
 			const neighbourhoodMidFee = Number(
@@ -61,7 +66,7 @@ export const getTaxa = async (req: Request, res: Response) => {
 
 			const feeByNeighbourhood =
 				filteredAddresses.filter(
-					e => e.bairro.id.toString() === neighbourhood?.toString(),
+					e => e.bairroId === neighbourhood?.toString(),
 				)?.[0]?.taxa ?? 0;
 
 			const feeByNearNeighbourhoodUp =
@@ -92,9 +97,6 @@ export const getTaxa = async (req: Request, res: Response) => {
 					: fee;
 		}
 
-		res.json({ taxa: taxa ?? 0 });
-	} catch (e: any) {
-		console.error(e["message"]);
-		res.send({ taxa: 0 });
+		return taxa ?? 0;
 	}
-};
+}

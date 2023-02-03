@@ -1,16 +1,3 @@
-import { Router } from "express";
-import {
-	getBebidas,
-	patchBebidas,
-	postBebidas,
-} from "../services/bebidas.service";
+import { makeBebidas } from "../factories/bebidas.factory";
 
-const BebidaRoutes = Router();
-
-BebidaRoutes.get("/", getBebidas);
-
-BebidaRoutes.patch("/", patchBebidas);
-
-BebidaRoutes.post("/", postBebidas);
-
-export default BebidaRoutes;
+export const BebidasRoutes = makeBebidas();
