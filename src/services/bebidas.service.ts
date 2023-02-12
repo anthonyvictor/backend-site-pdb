@@ -7,10 +7,34 @@ export class BebidasService extends Service<IOutro> {
   constructor(repo: Repo<IOutro>) {
     super(repo);
   }
+
+  sortBySize = (a: IOutro, b: IOutro) => {
+    let i = 0;
+
+    if (a.nome.toLocaleLowerCase().includes("350ml")) i = -1;
+    if (b.nome.toLocaleLowerCase().includes("350ml")) i = 1;
+    if (a.nome.toLocaleLowerCase().includes("1l")) i = -1;
+    if (b.nome.toLocaleLowerCase().includes("1l")) i = 1;
+
+    return i;
+  };
+
+  sortByType = (a: IOutro, b: IOutro) => {
+    let i = 0;
+
+    if (a.nome.toLocaleLowerCase().includes("cerveja")) i = -1;
+    if (b.nome.toLocaleLowerCase().includes("cerveja")) i = 1;
+    if (a.nome.toLocaleLowerCase().includes("refrigerante")) i = -1;
+    if (b.nome.toLocaleLowerCase().includes("refrigerante")) i = 1;
+
+    return i;
+  };
+
   async find(): Promise<IOutro[]> {
-    const data = ((await this.repo.find()) as IOutro[]).sort((a, b) =>
-      a.nome > b.nome ? 1 : -1
-    );
+    const data = ((await this.repo.find()) as IOutro[])
+      .sort((a, b) => (a.nome > b.nome ? 1 : -1))
+      .sort(this.sortBySize)
+      .sort(this.sortByType);
     return data;
   }
 
