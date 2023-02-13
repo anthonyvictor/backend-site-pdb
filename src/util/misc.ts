@@ -1,50 +1,51 @@
 export function removeAccents(txt: string) {
-	return String(txt)
-		.replace(/[ÀÁÂÃÄÅ]/gi, "A")
-		.replace(/[Ç]/gi, "C")
-		.replace(/[ÈÉÊË]/gi, "E")
-		.replace(/[ÌÍÎÏ]/gi, "I")
-		.replace(/[ÒÓÔÕÖ]/gi, "O")
-		.replace(/[ÙÚÛÜ]/gi, "U")
+  const r = String(txt)
+    .replace(/[ÀÁÂÃÄÅ]/g, "A")
+    .replace(/[Ç]/g, "C")
+    .replace(/[ÈÉÊË]/g, "E")
+    .replace(/[ÌÍÎÏ]/g, "I")
+    .replace(/[ÒÓÔÕÖ]/g, "O")
+    .replace(/[ÙÚÛÜ]/g, "U")
 
-		.replace(/[àáâãäå]/gi, "a")
-		.replace(/[ç]/gi, "c")
-		.replace(/[èéêë]/gi, "e")
-		.replace(/[ìíîï]/gi, "i")
-		.replace(/[òóôõö]/gi, "o")
-		.replace(/[ùúûü]/gi, "u")
-		.trim();
+    .replace(/[àáâãäå]/g, "a")
+    .replace(/[ç]/g, "c")
+    .replace(/[èéêë]/g, "e")
+    .replace(/[ìíîï]/g, "i")
+    .replace(/[òóôõö]/g, "o")
+    .replace(/[ùúûü]/g, "u")
+    .trim();
+  return r;
 }
 
 export function removeAbreviations(txt: string) {
-	return txt
-		.replace(/^r /, "rua ")
-		.replace(/^acesso /, "")
-		.replace(/^lad /, "ladeira ")
-		.replace(/^tv /, "travessa ")
-		.replace(/^trav /, "travessa ")
-		.replace(/^av /g, "avenida ")
-		.replace(/^pc /g, "praça ")
-		.replace(/^pç /g, "praça ")
-		.replace(/(. +)(st +)/g, "$1 santo ")
-		.replace(/(. +)(dr +)/g, "$1 doutor ")
-		.replace(/(. +)(dra +)/g, "$1 doutora ");
+  return txt
+    .replace(/^r /g, "rua ")
+    .replace(/^acesso /g, "")
+    .replace(/^lad /g, "ladeira ")
+    .replace(/^tv /g, "travessa ")
+    .replace(/^trav /g, "travessa ")
+    .replace(/^av /g, "avenida ")
+    .replace(/^pc /g, "praça ")
+    .replace(/^pç /g, "praça ")
+    .replace(/(. +)(st +)/g, "$1 santo ")
+    .replace(/(. +)(dr +)/g, "$1 doutor ")
+    .replace(/(. +)(dra +)/g, "$1 doutora ");
 }
 
 export function convertOrdinals(txt: string) {
-	[
-		"primeira",
-		"segunda",
-		"terceira",
-		"quarta",
-		"quinta",
-		"sexta",
-		"setima",
-		"oitava",
-		"nona",
-	].forEach((x, i) => {
-		const regex = new RegExp(String.raw`^(${i + 1}a|${i + 1}|${x}) `, "g");
-		txt = txt.replace(regex, `${i + 1}ª `);
-	});
-	return txt;
+  [
+    "primeira",
+    "segunda",
+    "terceira",
+    "quarta",
+    "quinta",
+    "sexta",
+    "setima",
+    "oitava",
+    "nona",
+  ].forEach((x, i) => {
+    const regex = new RegExp(String.raw`^(${i + 1}a|${i + 1}|${x}) `, "g");
+    txt = txt.replace(regex, `${i + 1}ª `);
+  });
+  return txt;
 }

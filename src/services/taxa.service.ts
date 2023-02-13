@@ -4,99 +4,105 @@ import { Service } from ".";
 import { ITaxaGetDTO } from "../dtos/taxa/get";
 import { Repo } from "../repositories";
 
-export class TaxaService extends Service<number> {
-  constructor(
-    protected repo: Repo<number>,
-    protected EnderecosRepo: Repo<IEndereco>
-  ) {
+export class TaxaService extends Service<IEndereco | null> {
+  constructor(protected repo: Repo<IEndereco>) {
     super(repo);
   }
-  create(item: number): void {
+  create(item: IEndereco): void {
     throw new Error("Method not implemented.");
   }
-  update(itemId: string, item: number): void {
+  update(itemId: string, item: IEndereco): void {
     throw new Error("Method not implemented.");
   }
   delete(itemId: string): void {
     throw new Error("Method not implemented.");
   }
-  async find(dto?: ITaxaGetDTO): Promise<number> {
-    const { street, number, cep, place, reference, neighbourhood } =
-      dto as ITaxaGetDTO;
+  async find(dto?: ITaxaGetDTO): Promise<IEndereco | null> {
+    const { rua, cep, bairroId } = dto as ITaxaGetDTO;
 
-    if (!street && !cep && !place && !number && !neighbourhood && !reference)
-      throw new Error("invalid address");
+    if (!rua && !cep && !bairroId) throw new Error("invalid address");
 
-    let taxa: number | undefined = 0;
+    let addressResponse: IEndereco | undefined;
 
     const cleanedCep = String(cep).replace(/[^0-9]/, "");
 
-    const addresses = (await this.EnderecosRepo.find()) as IEndereco[];
+    const allAddresses = (await this.repo.find()) as IEndereco[];
 
     if (Number(cleanedCep)) {
-      taxa = addresses.find((x) => {
+      addressResponse = allAddresses.find((x) => {
         return x.cep === cleanedCep;
-      })?.taxa;
+      });
     } else {
-      const cleanedAddress = clearAddress(street ?? "");
+      const cleanedAddress = clearAddress(rua ?? "");
 
-      const filteredAddresses = addresses
+      const filteredAddresses = allAddresses
         .sort((a, b) => (a.taxa > b.taxa ? 1 : a.taxa < b.taxa ? -1 : 0))
         // .reverse()
         .filter((x) =>
           x.rua.replace(/ DO | DA | DE | DI /g, " ").includes(cleanedAddress)
         );
 
-      const addressInNeighbourhood = addresses.filter(
-        (x) => x.bairroId === neighbourhood?.toString()
+      const addressesInNeighbourhood = allAddresses.filter(
+        (x) => x.bairroId === bairroId
       );
 
       const neighbourhoodMidFee = Number(
         (
-          addressInNeighbourhood.reduce(
+          addressesInNeighbourhood.reduce(
             (acc, address) => acc + address.taxa,
             0
-          ) / addressInNeighbourhood.length
+          ) / addressesInNeighbourhood.length
         ).toFixed(2)
       );
 
       const neighbourhoodMaxFee = Number(
-        Math.max(...addressInNeighbourhood.map((x) => x.taxa))
+        Math.max(...addressesInNeighbourhood.map((x) => x.taxa))
       );
 
-      const feeByNeighbourhood =
-        filteredAddresses.filter(
-          (e) => e.bairroId === neighbourhood?.toString()
-        )?.[0]?.taxa ?? 0;
+      const filteredAddressWithNeighbourhood = filteredAddresses.find(
+        (e) => e.bairroId === bairroId
+      );
 
-      const feeByNearNeighbourhoodUp =
-        addresses
-          .filter((e) => e.taxa >= neighbourhoodMidFee)
-          .sort((a, b) => (a.taxa > b.taxa ? 1 : a.taxa < b.taxa ? -1 : 0))?.[0]
-          ?.taxa ?? 0;
+      const sortAddressesByFee = (a: IEndereco, b: IEndereco) =>
+        a.taxa > b.taxa ? 1 : a.taxa < b.taxa ? -1 : 0;
 
-      const feeByNearNeighbourhoodDown =
-        addresses
-          .filter((e) => e.taxa < neighbourhoodMidFee)
-          .sort((a, b) => (a.taxa > b.taxa ? 1 : a.taxa < b.taxa ? -1 : 0))
-          .reverse()?.[0]?.taxa ?? 0;
+      const nextAddress = addressesInNeighbourhood
+        .filter((e) => e.taxa >= neighbourhoodMidFee)
+        .sort(sortAddressesByFee)?.[0];
 
-      const feeByNearNeighbourhood =
-        feeByNearNeighbourhoodUp - neighbourhoodMidFee <
-        neighbourhoodMidFee - feeByNearNeighbourhoodDown
-          ? feeByNearNeighbourhoodUp
-          : feeByNearNeighbourhoodDown;
+      const previousAddress = addressesInNeighbourhood
+        .filter((e) => e.taxa < neighbourhoodMidFee)
+        .sort(sortAddressesByFee)
+        .reverse()?.[0];
 
-      const fee = filteredAddresses?.[0]?.taxa ?? 0;
+      const isNextAddressClosest = () =>
+        (nextAddress?.taxa || 0) - neighbourhoodMidFee <
+        neighbourhoodMidFee - (previousAddress?.taxa || 0);
 
-      taxa =
-        feeByNeighbourhood === 0 && fee > neighbourhoodMaxFee
-          ? feeByNearNeighbourhood
-          : feeByNeighbourhood > 0
-          ? feeByNeighbourhood
-          : fee;
+      const closestAddress = isNextAddressClosest()
+        ? nextAddress
+        : previousAddress;
+
+      const exactlyAddress = filteredAddresses?.[0];
+
+      // console.log("endereco limpo", cleanedAddress);
+      // console.log("filtrados", filteredAddresses);
+      // console.log("taxa media do bairro", neighbourhoodMidFee);
+      // console.log("taxa máxima do bairro", neighbourhoodMaxFee);
+      // console.log("taxa pelo bairro", filteredAddressWithNeighbourhood);
+      // console.log("taxa ao redor do bairro UP", nextAddress);
+      // console.log("taxa ao redor do bairro DOWN", previousAddress);
+      // console.log("taxa ao redor do bairro", closestAddress);
+      // console.log("taxa correta", exactlyAddress);
+
+      addressResponse =
+        filteredAddressWithNeighbourhood?.taxa !== 0
+          ? filteredAddressWithNeighbourhood
+          : exactlyAddress.taxa > neighbourhoodMaxFee
+          ? closestAddress
+          : exactlyAddress;
     }
 
-    return taxa ?? 0;
+    return addressResponse ?? null;
   }
 }
