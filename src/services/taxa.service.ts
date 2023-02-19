@@ -96,12 +96,14 @@ export class TaxaService extends Service<IEndereco | null> {
       // console.log("taxa correta", exactlyAddress);
 
       addressResponse =
-        filteredAddressWithNeighbourhood?.taxa !== 0
+        filteredAddressWithNeighbourhood?.taxa ?? 0 > 0
           ? filteredAddressWithNeighbourhood
           : exactlyAddress.taxa > neighbourhoodMaxFee
           ? closestAddress
           : exactlyAddress;
     }
+
+    // console.log("resposta:", addressResponse);
 
     return addressResponse ?? null;
   }
