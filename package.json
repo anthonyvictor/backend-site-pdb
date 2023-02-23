@@ -1,7 +1,7 @@
 {
-	"name": "backend-site-pizzaria-delicia-da-bahia",
+	"name": "backend-site-pdb",
 	"version": "1.0.0",
-	"description": "Back-end do site da Pizzaria Delicia da Bahia.",
+	"description": "Backend do site da Pizzaria Delicia da Bahia.",
 	"main": "./src/server.ts",
 	"scripts": {
 		"dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules ./src/server.ts",
