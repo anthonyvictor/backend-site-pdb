@@ -14,27 +14,39 @@ export class SaboresService extends Service<IPizzaSabor> {
     super(repo);
   }
 
-  async find({ id, strict }: ISaboresGetDTO) {
+  async find({ id, somenteSabores, gruposProcurados }: ISaboresGetDTO) {
     const sabores = ((await this.repo.find()) as IPizzaSabor[]).filter((e) =>
       id ? e.id === id : true
     );
 
-    const saboresOrdered = sabores.sort(sortFlavoursByName);
+    const saboresOrdenados = sabores.sort(sortFlavoursByName);
 
-    if (strict) return sabores;
+    if (somenteSabores) return sabores;
 
-    const grupos = (await this.GruposRepo.find()) as IPizzaGrupo[];
+    let grupos = (await this.GruposRepo.find()) as IPizzaGrupo[];
 
-    return grupos
+    const gruposPelaQuery = () =>
+      grupos.filter((g) =>
+        gruposProcurados
+          ?.toUpperCase()
+          .split(" ")
+          .includes(g.nome.split(" ").slice(0, -1).join("").toUpperCase())
+      );
+
+    if (gruposProcurados) grupos = gruposPelaQuery();
+
+    const r = grupos
       .map((g) => ({
         ...g,
-        sabores: saboresOrdered
+        sabores: saboresOrdenados
           .sort(sortFlavoursByMidValue)
           .filter((s) => s.grupoId === g.id),
       }))
       .sort(sortGroupsByFlavoursLength)
       .sort(sortGroupsByMidValue)
       .filter((g) => g.sabores.length > 0);
+
+    return r;
   }
   async create(item: IPizzaSabor) {
     const id = uuidv4();
