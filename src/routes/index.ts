@@ -10,6 +10,8 @@ import { EnderecosRoutes } from "./enderecos.routes";
 import { BairrosRoutes } from "./bairros.routes";
 import { TaxaRoutes } from "./taxa.routes";
 
+import { HorariosRoutes } from "./horarios.routes";
+
 const routes = express();
 
 routes.use("/auth", AuthRoutes);
@@ -21,6 +23,8 @@ routes.use("/lanches", LanchesRoutes);
 routes.use("/enderecos", EnderecosRoutes);
 routes.use("/bairros", BairrosRoutes);
 routes.use("/taxa", TaxaRoutes);
+
+routes.use("/horarios", HorariosRoutes);
 
 routes.use("/", (req, res) => res.json({ message: "Site ON" }));
 

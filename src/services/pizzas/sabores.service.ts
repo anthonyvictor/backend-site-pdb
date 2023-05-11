@@ -14,14 +14,25 @@ export class SaboresService extends Service<IPizzaSabor> {
     super(repo);
   }
 
-  async find({ id, somenteSabores, gruposProcurados }: ISaboresGetDTO) {
+  async find({
+    id,
+    somenteSabores,
+    gruposProcurados,
+    index,
+    length,
+  }: ISaboresGetDTO) {
     const sabores = ((await this.repo.find()) as IPizzaSabor[]).filter((e) =>
       id ? e.id === id : true
     );
 
     const saboresOrdenados = sabores.sort(sortFlavoursByName);
-
-    if (somenteSabores) return sabores;
+    if (somenteSabores) {
+      if (length && index !== undefined) {
+        return saboresOrdenados.slice(index, index + length);
+      } else {
+        return sabores;
+      }
+    }
 
     let grupos = (await this.GruposRepo.find()) as IPizzaGrupo[];
 

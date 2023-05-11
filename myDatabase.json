@@ -1,4 +1,187 @@
 {
+    "horarios": [
+        {
+            "dia": "segunda",
+            "inicio": null,
+            "fim": null
+        },
+        {
+            "dia": "terça",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "dia": "quarta",
+            "inicio": "18:30",
+            "fim": "22:30"
+        },
+        {
+            "dia": "quinta",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "dia": "sexta",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "dia": "sábado",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "dia": "domingo",
+            "inicio": "18:30",
+            "fim": "23:30"
+        }
+    ],
+    "feriados": [
+        {
+            "data": "01/01/2024",
+            "nome": "Ano Novo",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "20/02/2023",
+            "nome": "Carnaval",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "21/02/2023",
+            "nome": "Carnaval",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "22/02/2023",
+            "nome": "Carnaval",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "07/04/2023",
+            "nome": "Sexta-Feira Santa",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "21/04/2023",
+            "nome": "Dia de Tiradentes",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "01/05/2023",
+            "nome": "Dia do Trabalho",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "14/05/2023",
+            "nome": "Dia das Mães",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "08/06/2023",
+            "nome": "Corpus Christi",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "24/06/2023",
+            "nome": "Dia de São João",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "02/07/2023",
+            "nome": "Independência da Bahia",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "10/07/2023",
+            "nome": "Dia da Pizza",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "13/08/2023",
+            "nome": "Dia dos Pais",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "07/09/2023",
+            "nome": "Independência do Brasil",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "12/10/2023",
+            "nome": "Nossa Senhora Aparecida",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "16/10/2023",
+            "nome": "Dia do Comerciário",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "02/11/2023",
+            "nome": "Dia de Finados",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "15/11/2023",
+            "nome": "Proclamação da República",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "20/11/2023",
+            "nome": "Dia da Consciência Negra",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "24/11/2023",
+            "nome": "Black Friday",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "08/12/2023",
+            "nome": "Dia de Nossa Senhora da Conceição",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "24/12/2023",
+            "nome": "Véspera de Natal",
+            "inicio": false,
+            "fim": false
+        },
+        {
+            "data": "25/12/2023",
+            "nome": "Natal",
+            "inicio": "18:30",
+            "fim": "23:30"
+        },
+        {
+            "data": "31/12/2023",
+            "nome": "Véspera de Ano Novo",
+            "inicio": false,
+            "fim": false
+        }
+    ],
     "bebidas": [
         {
             "id": "79b42b82-4ce6-42ec-a729-1de6a348daa3",
