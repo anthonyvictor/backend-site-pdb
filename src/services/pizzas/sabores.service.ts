@@ -41,7 +41,6 @@ export class SaboresService extends Service<IPizzaSabor> {
       3 queijos
       2 queijos
       baiana
-      frango
       alho e óleo
       brasileira
       napolitana
