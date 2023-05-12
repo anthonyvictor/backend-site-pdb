@@ -56,15 +56,7 @@ export class SaboresService extends Service<IPizzaSabor> {
           )
           .map((x) => ({
             ...x,
-            ingredientes: x.ingredientes.filter(
-              (y) =>
-                !"azeitona"
-                  .split(
-                    `
-      `
-                  )
-                  .includes(y.toLowerCase())
-            ),
+            ingredientes: x.ingredientes.filter((y) => !y.includes("azeitona")),
           }))
       : _saboresOrdenados;
     if (somenteSabores) {
