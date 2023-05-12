@@ -29,12 +29,13 @@ export class SaboresService extends Service<IPizzaSabor> {
     console.log(promocionais);
 
     const _saboresOrdenados = sabores.sort(sortFlavoursByName);
+    // delicia da bahia
+    //   da roça
+
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
           .filter((x) =>
             `calabresa
-      delicia da bahia
-      da roça
       presunto
       milho
       mussarela
