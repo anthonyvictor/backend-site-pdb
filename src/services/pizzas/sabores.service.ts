@@ -26,27 +26,29 @@ export class SaboresService extends Service<IPizzaSabor> {
       id ? e.id === id : true
     );
 
-    console.log(promocionais);
-
     const _saboresOrdenados = sabores.sort(sortFlavoursByName);
-    // delicia da bahia
-    //   da roça
+    //
+    //
 
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
           .filter((x) =>
             `calabresa
-      presunto
-      milho
-      mussarela
-      3 queijos
-      2 queijos
-      baiana
-      alho e óleo
-      brasileira
-      napolitana
-      banana nevada
-      romeu e julieta`
+            frango
+            presunto
+            delicia da bahia
+            moda da casa
+            da roça
+            milho
+            mussarela
+            2 queijos
+            3 queijos
+            alho e óleo
+            baiana
+            napolitana
+            brasileira
+            romeu e julieta
+            banana nevada`
               .split(
                 `
       `
@@ -56,7 +58,9 @@ export class SaboresService extends Service<IPizzaSabor> {
           )
           .map((x) => ({
             ...x,
-            ingredientes: x.ingredientes.filter((y) => !y.includes("azeitona")),
+            ingredientes: x.ingredientes.filter((y) =>
+              "azeitona".split(",").some((z) => !y.toLowerCase().includes(z))
+            ),
           }))
       : _saboresOrdenados;
     if (somenteSabores) {
