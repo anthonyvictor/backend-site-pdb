@@ -11,6 +11,7 @@ import { BairrosRoutes } from "./bairros.routes";
 import { TaxaRoutes } from "./taxa.routes";
 
 import { HorariosRoutes } from "./horarios.routes";
+import { PedidosRoutes } from "./pedidos.routes";
 
 const routes = express();
 
@@ -25,6 +26,7 @@ routes.use("/bairros", BairrosRoutes);
 routes.use("/taxa", TaxaRoutes);
 
 routes.use("/horarios", HorariosRoutes);
+routes.use("/pedidos", PedidosRoutes);
 
 routes.use("/", (req, res) => res.json({ message: "Site ON" }));
 
