@@ -1,4 +1,5 @@
 import { Schema } from "mongoose";
+import { IHorario } from "../../../types/pedido";
 
 export const HorarioSchema = new Schema<IHorario>({
   tipo: {

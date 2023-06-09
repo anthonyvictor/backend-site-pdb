@@ -1,4 +1,6 @@
 import { Schema } from "mongoose";
+import { IItem } from "../../../types/item";
+import { IPizzaSabor } from "../../../types/pizza";
 
 export const PizzaSaborSchema = new Schema<IPizzaSabor>({
   nome: { type: String },

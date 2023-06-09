@@ -1,4 +1,5 @@
 import { Schema } from "mongoose";
+import { IPedido } from "../../../types/pedido";
 import { ClienteSchema } from "./cliente";
 import { HorarioSchema } from "./horario";
 import { ItemSchema } from "./item";

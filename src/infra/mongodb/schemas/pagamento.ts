@@ -1,4 +1,5 @@
 import { Schema } from "mongoose";
+import { IPagamento } from "../../../types/pedido";
 
 export const PagamentoSchema = new Schema<IPagamento>({
   tipo: {
