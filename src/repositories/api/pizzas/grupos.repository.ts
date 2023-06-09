@@ -1,5 +1,6 @@
 import { Repo } from "../..";
 import { api } from "../../../config/api";
+import { IPizzaGrupo } from "../../../types/pizza";
 
 export class GruposRepoApi extends Repo<IPizzaGrupo> {
   async find(): Promise<IPizzaGrupo[]> {

@@ -1,5 +1,6 @@
 import { Repo } from "../..";
 import { api } from "../../../config/api";
+import { IPizzaTamanho } from "../../../types/pizza";
 
 export class TamanhosRepoApi extends Repo<IPizzaTamanho> {
   async find(): Promise<IPizzaTamanho[]> {

@@ -1,5 +1,6 @@
 import { Service } from "..";
 import { v4 as uuidv4 } from "uuid";
+import { IPizzaGrupo } from "../../types/pizza";
 
 export class GruposService extends Service<IPizzaGrupo> {
   async find(): Promise<IPizzaGrupo[]> {

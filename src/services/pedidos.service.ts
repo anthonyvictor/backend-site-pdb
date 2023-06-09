@@ -3,6 +3,7 @@ import { Repo } from "../repositories";
 import { min } from "date-fns";
 import { IPedidosGetDTO } from "../dtos/pedidos/get";
 import { z } from "zod";
+import { IPedido } from "../types/pedido";
 const createPedidoSchema = z.object({
   cliente: z.object({
     nome: z

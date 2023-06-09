@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { Controller } from "..";
 import { v4 as uuidv4 } from "uuid";
+import { IPizzaGrupo } from "../../types/pizza";
 
 export class GruposController extends Controller<IPizzaGrupo> {
   get = async (req: Request, res: Response) => {

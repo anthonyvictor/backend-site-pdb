@@ -1,6 +1,7 @@
 import { Service } from "..";
 import { v4 as uuidv4 } from "uuid";
 import { ITamanhosGetDTO } from "../../dtos/tamanhos/get";
+import { IPizzaTamanho } from "../../types/pizza";
 
 export class TamanhosService extends Service<IPizzaTamanho> {
   async find({ id }: ITamanhosGetDTO): Promise<IPizzaTamanho[]> {

@@ -1,4 +1,4 @@
-interface IItem {
+export interface IItem {
   id?: string;
   observacao?: string;
   tamanho?: string;

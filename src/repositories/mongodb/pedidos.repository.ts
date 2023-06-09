@@ -1,6 +1,7 @@
 import { Repo } from "..";
 import { IPedidosGetDTO } from "../../dtos/pedidos/get";
 import { PedidosModel } from "../../infra/mongodb/models/pedido";
+import { IPedido } from "../../types/pedido";
 
 export class PedidosRepoMongodb extends Repo<IPedido> {
   async find(dto: IPedidosGetDTO): Promise<IPedido[]> {

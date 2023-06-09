@@ -1,4 +1,6 @@
-interface IPedido {
+import { IItem } from "./item";
+
+export interface IPedido {
   id: string;
   cliente: ICliente;
   tipo: "retirada" | "entrega";
@@ -17,14 +19,14 @@ interface IPedido {
   pagamento: IPagamento[];
 }
 
-interface IPagamento {
+export interface IPagamento {
   id: string;
   tipo: "especie" | "pix" | "cartao";
   valor: number;
   trocoPara: number;
 }
 
-interface IHorario {
+export interface IHorario {
   tipo:
     | "enviado"
     | "recebido"

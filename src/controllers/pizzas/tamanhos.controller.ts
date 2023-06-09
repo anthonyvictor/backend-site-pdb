@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { Controller } from "..";
 import { v4 as uuidv4 } from "uuid";
 import { ITamanhosGetDTO } from "../../dtos/tamanhos/get";
+import { IPizzaTamanho } from "../../types/pizza";
 
 export class TamanhosController extends Controller<IPizzaTamanho> {
   get = async (req: Request, res: Response) => {

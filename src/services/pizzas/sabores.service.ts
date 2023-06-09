@@ -8,6 +8,7 @@ import {
   sortGroupsByMidValue,
 } from "../../util/services/sabores.util";
 import { ISaboresGetDTO } from "../../dtos/sabores/get";
+import { IPizzaGrupo, IPizzaSabor } from "../../types/pizza";
 export class SaboresService extends Service<IPizzaSabor> {
   constructor(repo: Repo<IPizzaSabor>, private GruposRepo: Repo<IPizzaGrupo>) {
     super(repo);

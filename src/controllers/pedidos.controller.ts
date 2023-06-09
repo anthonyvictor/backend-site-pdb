@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { Controller } from ".";
 import { v4 as uuidv4 } from "uuid";
 import { IPedidosGetDTO } from "../dtos/pedidos/get";
+import { IPedido } from "../types/pedido";
 
 export class PedidosController extends Controller<IPedido> {
   get = async (req: Request, res: Response) => {
