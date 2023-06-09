@@ -30,20 +30,21 @@ export class SaboresService extends Service<IPizzaSabor> {
     //  "brasileira",
     //        "frango",
     // "delicia da bahia",
+    //  "da roça",
+    //              "portuguesa",
+    //               "batata palha",
+    //               "agridoce",
 
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
           .filter((x) =>
             [
               `calabresa`,
-              "batata palha",
-              "agridoce",
-              "portuguesa",
               "sulista",
 
               "presunto",
               "moda da casa",
-              "da roça",
+
               "milho",
               "mussarela",
               "2 queijos",
