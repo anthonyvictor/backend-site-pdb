@@ -1,5 +1,4 @@
 import { Service } from "..";
-import { IPizzaGrupo, IPizzaSabor } from "../../types/pizza";
 import { v4 as uuidv4 } from "uuid";
 import { Repo } from "../../repositories";
 import {
@@ -27,17 +26,21 @@ export class SaboresService extends Service<IPizzaSabor> {
     );
 
     const _saboresOrdenados = sabores.sort(sortFlavoursByName);
-    //
-    //
+    //  "brasileira",
+    //        "frango",
+    // "delicia da bahia",
 
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
           .filter((x) =>
             [
               `calabresa`,
-              "frango",
+              "batata palha",
+              "agridoce",
+              "portuguesa",
+              "sulista",
+
               "presunto",
-              "delicia da bahia",
               "moda da casa",
               "da roça",
               "milho",
@@ -47,7 +50,7 @@ export class SaboresService extends Service<IPizzaSabor> {
               "alho e óleo",
               "baiana",
               "napolitana",
-              "brasileira",
+
               "romeu e julieta",
               "banana nevada",
             ].some((y) => x.nome.toLowerCase().includes(y))

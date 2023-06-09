@@ -1,5 +1,4 @@
 import { Service } from "..";
-import { IPizzaTamanho } from "../../types/pizza";
 import { v4 as uuidv4 } from "uuid";
 import { ITamanhosGetDTO } from "../../dtos/tamanhos/get";
 

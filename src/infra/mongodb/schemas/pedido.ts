@@ -27,7 +27,6 @@ export const PedidoSchema = new Schema<IPedido>({
 
 PedidoSchema.pre<IPedido>("save", function (next) {
   if (this.tipo === "entrega") {
-    console.log(this.endereco);
     if (!this.endereco?.cep || !this.endereco?.bairro) {
       const error = new Error("Endereço inválido");
       return next(error);

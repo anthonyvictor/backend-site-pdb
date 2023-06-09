@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { IPizzaSabor } from "../../types/pizza";
 import { Controller } from "..";
 import { v4 as uuidv4 } from "uuid";
 import { ISaboresGetDTO } from "../../dtos/sabores/get";

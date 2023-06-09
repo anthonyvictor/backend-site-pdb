@@ -23,8 +23,3 @@ interface IPizzaSaborValor {
   tamanhoId: string;
   valor: number;
 }
-
-interface IPizza extends IItem {
-  tamanho: IPizzaTamanho;
-  sabores: Array<IPizzaSabor>;
-}

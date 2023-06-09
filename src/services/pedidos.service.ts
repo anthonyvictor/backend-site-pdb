@@ -91,6 +91,7 @@ export class PedidosService extends Service<IPedido> {
 
   async create(item: IPedido) {
     createPedidoSchema.parse(item);
+    console.log(item);
     return await this.repo.create({ ...item });
   }
   async update(itemId: string, item: IPedido) {
