@@ -34,6 +34,8 @@ export class SaboresService extends Service<IPizzaSabor> {
     //              "portuguesa",
     //               "batata palha",
     //               "agridoce",
+    //              "banana nevada",
+
 
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
@@ -54,7 +56,6 @@ export class SaboresService extends Service<IPizzaSabor> {
               "napolitana",
 
               "romeu e julieta",
-              "banana nevada",
             ].some((y) => x.nome.toLowerCase().includes(y))
           )
           .map((x) => ({
