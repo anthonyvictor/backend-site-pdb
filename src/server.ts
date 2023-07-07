@@ -13,6 +13,7 @@ app.use(cors());
 connectToMongoDb()
   .then(() => {
     console.info("✅ Connected to MongoDB");
+    buildServer();
   })
   .catch((err) => {
     console.error(err.message, "❌ Failed to connect to MongoDB");
@@ -31,4 +32,4 @@ const buildServer = async () => {
 
 export const cache = new Cache();
 
-buildServer();
+// buildServer();
