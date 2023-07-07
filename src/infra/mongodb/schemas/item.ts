@@ -9,6 +9,8 @@ export const PizzaSaborSchema = new Schema<IPizzaSabor>({
 
 export const ItemSchema = new Schema<IItem>({
   sabores: { type: [PizzaSaborSchema] },
+  tipo: { type: String, enum: ["PIZZA", "BEBIDA", "OUTRO"] },
+  nome: { type: String },
   tamanho: { type: String },
   observacao: { type: String },
   valor: { type: Number, required: true },

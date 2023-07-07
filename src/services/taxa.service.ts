@@ -98,7 +98,7 @@ export class TaxaService extends Service<IEndereco | null> {
       addressResponse =
         filteredAddressWithNeighbourhood?.taxa ?? 0 > 0
           ? filteredAddressWithNeighbourhood
-          : exactlyAddress.taxa > neighbourhoodMaxFee
+          : exactlyAddress?.taxa ?? 0 > neighbourhoodMaxFee
           ? closestAddress
           : exactlyAddress;
     }

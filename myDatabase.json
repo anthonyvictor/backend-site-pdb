@@ -191,11 +191,144 @@
             "imagemUrl": "https://i.ibb.co/4R2BPKG/1433962-2.webp"
         },
         {
-            "id": "b497ebda-33ad-4010-9237-4fb07ef2a29e",
-            "nome": "cerveja PETRA 350ml",
-            "valor": 4.5,
+            "id": "e90946c3-41b5-4dd1-b83a-4b3eebcc86ee",
+            "nome": "cerveja itaipava 350ml",
+            "valor": 3.5,
             "disponivel": true,
-            "imagemUrl": "https://i.ibb.co/bFf7gBk/88163-cerveja-petra-puro-malte-lata-350ml.jpg"
+            "imagemUrl": "https://i.ibb.co/XV9g92m/itaipava.png"
+        },
+        {
+            "id": "61e2a5e0-023e-4224-949d-266262ac3a49",
+            "nome": "refrigerante antárctica 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/djLfgFD/3323-1.jpg"
+        },
+        {
+            "id": "dae02634-418f-407f-8193-a291feec7626",
+            "nome": "refrigerante antárctica 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/grz54KS/linha51-6.jpg"
+        },
+        {
+            "id": "c4a7f5a0-c20f-439a-a2f4-ca727f48bc81",
+            "nome": "refrigerante antárctica zero 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/GkR0f2g/antarctica-zero-350.png"
+        },
+        {
+            "id": "468a1c21-98da-438b-a915-7eb925ff3187",
+            "nome": "refrigerante coca cola 1l",
+            "valor": 7,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/XpRF5ry/FRENTE.jpg"
+        },
+        {
+            "id": "468a1c21-98da-438b-a915-7eb925ff3187",
+            "nome": "refrigerante coca cola zero 1l",
+            "valor": 7,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/M6nHvnh/ref-coca-cola-1l-zero-7894900701715.jpg"
+        },
+        {
+            "id": "2717d0b5-bd9f-456b-84b1-81890821d3a8",
+            "nome": "refrigerante coca cola 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/X5n5TCh/REFRIGERANTE-COCA-COLA-LATA-350-ML.png"
+        },
+        {
+            "id": "eb8d04ea-9f13-40f4-9750-add86ceba458",
+            "nome": "refrigerante coca cola zero 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/bN2Sq0F/coca-zero-3501-d10073d7379c4514b415698463221633-640-0.png"
+        },
+        {
+            "id": "d0910a8a-af35-4317-80dd-e8f9a1125aa7",
+            "nome": "refrigerante h2oh limão 500ml",
+            "valor": 5,
+            "disponivel": false,
+            "imagemUrl": "https://i.ibb.co/yWg6dQp/h2oh-limao.png"
+        },
+        {
+            "id": "a86acc16-5540-4bf5-88c7-f59d8e07072d",
+            "nome": "refrigerante kuat 1l",
+            "valor": 6,
+            "disponivel": false,
+            "imagemUrl": "https://i.ibb.co/BGNn7vf/images-1-3.jpg"
+        },
+        {
+            "id": "5c3e5a1a-5797-4157-b385-599aab9e59f5",
+            "nome": "refrigerante pepsi 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/9VtV0CK/Refrigerante-Pepsi-Cola-1-Litro-Garrafa.png"
+        },
+        {
+            "id": "e08a11df-8efc-451a-89b4-dbb3ee6d8f85",
+            "nome": "refrigerante pepsi 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/1fftLc5/Pepsi-350ml.jpg"
+        },
+        {
+            "id": "9bee3dfa-5bb7-41eb-b0cd-3c849fe8ce2e",
+            "nome": "refrigerante pepsi zero 350ml",
+            "valor": 4,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/nLTXCMy/Refrigerante-Pepsi-Cola-Zero-Lata-350-ml.webp"
+        },
+        {
+            "id": "9eff5bd4-f1f1-4e44-b16a-28efe004898a",
+            "nome": "refrigerante sukita laranja 1l",
+            "valor": 6,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/bJTsgTX/9690-1.jpg"
+        },
+        {
+            "id": "47a0c4c2-2eec-4b78-950f-193d6062f7bb",
+            "nome": "suco del valle laranja 450ml",
+            "valor": 5,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/s3sysy4/del-valle-laranja.png"
+        },
+        {
+            "id": "f408c169-1e16-4088-af8d-1d79c34e90f4",
+            "nome": "suco del valle uva 450ml",
+            "valor": 5,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/grBFrWb/del-valle-uva.png"
+        },
+        {
+            "id": "792ffbf9-34c5-4064-a4a5-ce9bf0db78f1",
+            "nome": "suco yulo frutas cítricas 1.5l",
+            "valor": 7,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/VLLqmP7/yulo-laranja.png"
+        },
+        {
+            "id": "f9b9fefc-34db-4d64-a708-3bbde400165c",
+            "nome": "água com gás 500ml",
+            "valor": 3,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/rx5hd6F/172327.png"
+        },
+        {
+            "id": "bd0c5d87-0501-404a-8abb-5f8cc7e6b340",
+            "nome": "água mineral 1.5l",
+            "valor": 5,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/mvNKXf6/agua-1500.png"
+        },
+        {
+            "id": "35781503-f009-4684-a340-69b3763d1fd4",
+            "nome": "água mineral 500ml",
+            "valor": 2,
+            "disponivel": true,
+            "imagemUrl": "https://i.ibb.co/BwxxTYg/127791.png"
         }
     ],
     "lanches": [

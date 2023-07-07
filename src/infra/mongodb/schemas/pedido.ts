@@ -13,6 +13,7 @@ export const PedidoSchema = new Schema<IPedido>({
   tipo: { type: String, enum: ["retirada", "entrega"] },
   endereco: {
     cep: { type: String },
+    logradouro: { type: String },
     bairro: { type: String },
     local: { type: String },
     numero: { type: String },
@@ -26,12 +27,12 @@ export const PedidoSchema = new Schema<IPedido>({
   pagamento: { type: [PagamentoSchema], required: true },
 });
 
-PedidoSchema.pre<IPedido>("save", function (next) {
-  if (this.tipo === "entrega") {
-    if (!this.endereco?.cep || !this.endereco?.bairro) {
-      const error = new Error("Endereço inválido");
-      return next(error);
-    }
-  }
-  next();
-});
+// PedidoSchema.pre<IPedido>("save", function (next) {
+//   if (this.tipo === "entrega") {
+//     // if (!this.endereco?.cep || !this.endereco?.bairro) {
+//     //   const error = new Error("Endereço inválido");
+//     //   return next(error);
+//     // }
+//   }
+//   next();
+// });

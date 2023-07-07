@@ -55,12 +55,13 @@ const createPedidoSchema = z.object({
     .array(),
   endereco: z
     .object({
-      cep: z.string(),
+      cep: z.string().nullable().optional(),
+      logradouro: z.string().nullable().optional(),
       bairro: z.string(),
-      local: z.string(),
-      numero: z.string(),
-      referencia: z.string(),
-      taxa: z.number(),
+      local: z.string().nullable().optional(),
+      numero: z.string().nullable().optional(),
+      referencia: z.string().nullable().optional(),
+      taxa: z.number().optional().nullable(),
     })
     .nullable()
     .optional(),
@@ -92,7 +93,6 @@ export class PedidosService extends Service<IPedido> {
 
   async create(item: IPedido) {
     createPedidoSchema.parse(item);
-    console.log(item);
     return await this.repo.create({ ...item });
   }
   async update(itemId: string, item: IPedido) {
