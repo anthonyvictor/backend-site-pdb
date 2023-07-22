@@ -16,6 +16,7 @@ export interface IPizzaTamanho {
   nome: string;
   fatias: number;
   tamanhoAprox: number;
+  aPartir: number;
   maxSabores: number;
   visivel: boolean;
 }

@@ -488,6 +488,35 @@
                 "grupoId": "c0750d21-a966-4d53-b312-5acdfbc649fa"
             },
             {
+                "id": "2428yae5-025c-4a84-9d9a-4276f18hc8da",
+                "nome": "Barbie 💞",
+                "disponivel": true,
+                "ingredientes": [
+                    "Mussarela",
+                    "Doce de Leite",
+                    "Glitter Comestível"
+                ],
+                "valores": [
+                    {
+                        "tamanhoId": "789182b6-4b12-41e6-929b-49a33122b7a2",
+                        "valor": 23
+                    },
+                    {
+                        "tamanhoId": "fd8a7371-7ee5-45ba-8157-488093618799",
+                        "valor": 34
+                    },
+                    {
+                        "tamanhoId": "4d29fd7f-2635-474a-a2ec-2cd8560244d5",
+                        "valor": 43
+                    },
+                    {
+                        "tamanhoId": "5c82b567-cd53-453b-82c8-4f9b911db48b",
+                        "valor": 50
+                    }
+                ],
+                "grupoId": "c0750d21-a966-4d53-b312-5acdfbc649fa"
+            },
+            {
                 "id": "27f5cae7-a61d-452e-b956-7ab5aa27a6c5",
                 "nome": "Mussarela 🧀",
                 "disponivel": true,

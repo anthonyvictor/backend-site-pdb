@@ -36,25 +36,19 @@ export class SaboresService extends Service<IPizzaSabor> {
     //               "agridoce",
     //              "banana nevada",
 
-
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
           .filter((x) =>
             [
               `calabresa`,
-              "sulista",
-
               "presunto",
-              "moda da casa",
-
               "milho",
               "mussarela",
               "2 queijos",
-              "3 queijos",
               "alho e óleo",
               "baiana",
               "napolitana",
-
+              "frango",
               "romeu e julieta",
             ].some((y) => x.nome.toLowerCase().includes(y))
           )
