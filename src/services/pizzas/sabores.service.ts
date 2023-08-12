@@ -41,6 +41,9 @@ export class SaboresService extends Service<IPizzaSabor> {
           .filter((x) =>
             [
               `calabresa`,
+              `moda da casa`,
+              `catupiresa`,
+              `chinesa`,
               "presunto",
               "milho",
               "mussarela",
@@ -48,7 +51,7 @@ export class SaboresService extends Service<IPizzaSabor> {
               "alho e óleo",
               "baiana",
               "napolitana",
-              "frango",
+              // "frango",
               "romeu e julieta",
             ].some((y) => x.nome.toLowerCase().includes(y))
           )
