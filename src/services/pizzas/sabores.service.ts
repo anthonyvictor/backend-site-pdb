@@ -51,7 +51,8 @@ export class SaboresService extends Service<IPizzaSabor> {
               "alho e óleo",
               "baiana",
               "napolitana",
-              // "frango",
+              "frango",
+              "delicia da bahia",
               "romeu e julieta",
             ].some((y) => x.nome.toLowerCase().includes(y))
           )
