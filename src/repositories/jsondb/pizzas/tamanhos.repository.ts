@@ -6,17 +6,17 @@ export class TamanhosRepoJsondb extends Repo<IPizzaTamanho> {
   async find(): Promise<IPizzaTamanho[]> {
     const repo = await new RepoJsondb();
     const tamanhos = (await repo.get("/pizzas/tamanhos")) as IPizzaTamanho[];
-    const sabores = (await repo.get("/pizzas/sabores")) as IPizzaSabor[];
-    const resultado = tamanhos.map((t) => ({
-      ...t,
-      aPartir: sabores
-        .map((s) =>
-          s.valores.filter((v) => v.tamanhoId === t.id).map((v) => v.valor)
-        )
-        .flat()
-        .sort()[0],
-    }));
-    return resultado;
+    // const sabores = (await repo.get("/pizzas/sabores")) as IPizzaSabor[];
+    // const resultado = tamanhos.map((t) => ({
+    //   ...t,
+    //   aPartir: sabores
+    //     .map((s) =>
+    //       s.valores.filter((v) => v.tamanhoId === t.id).map((v) => v.valor)
+    //     )
+    //     .flat()
+    //     .sort()[0],
+    // }));
+    return tamanhos;
   }
   async create(data: IPizzaTamanho) {
     await new RepoJsondb().post("/pizzas/tamanhos", { data });
