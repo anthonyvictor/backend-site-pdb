@@ -12,6 +12,7 @@ import { TaxaRoutes } from "./taxa.routes";
 
 import { HorariosRoutes } from "./horarios.routes";
 import { PedidosRoutes } from "./pedidos.routes";
+import { LojaRoutes } from "./loja.routes";
 
 const routes = express();
 
@@ -27,6 +28,7 @@ routes.use("/taxa", TaxaRoutes);
 
 routes.use("/horarios", HorariosRoutes);
 routes.use("/pedidos", PedidosRoutes);
+routes.use("/loja", LojaRoutes);
 
 routes.use("/", (req, res) => res.json({ message: "Site ON" }));
 
