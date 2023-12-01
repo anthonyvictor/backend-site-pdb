@@ -6,16 +6,22 @@ import { TamanhosRepoApi } from "../../repositories/api/pizzas/tamanhos.reposito
 import { SaboresRepoJsondb } from "../../repositories/jsondb/pizzas/sabores.repository";
 import { TamanhosRepoJsondb } from "../../repositories/jsondb/pizzas/tamanhos.repository";
 import { TamanhosService } from "../../services/pizzas/tamanhos.service";
+import { TamanhosRepoMongodb } from "../../repositories/mongodb/pizzas/tamanhos.repository";
+import { SaboresRepoMongodb } from "../../repositories/mongodb/pizzas/sabores.repository";
 
 export const makeTamanhos = () => {
   const router = Router();
   const controller = new TamanhosController(
     new TamanhosService(
       environments.repoLocation === "api"
-        ? new TamanhosRepoApi()
+        ? new TamanhosRepoApi(): 
+        environments.repoLocation === 'mongodb' 
+        ? new TamanhosRepoMongodb()
         : new TamanhosRepoJsondb(),
       environments.repoLocation === "api"
-        ? new SaboresRepoApi()
+        ? new SaboresRepoApi(): 
+        environments.repoLocation === 'mongodb' 
+        ? new SaboresRepoMongodb()
         : new SaboresRepoJsondb()
     )
   );

@@ -9,5 +9,5 @@ export const environments = {
   Port: process.env.APP_PORT as unknown as number,
   apiURL: process.env.API_URL as string,
   apiKey: process.env.API_KEY as string,
-  repoLocation: process.env.REPO_LOCATION as "api" | "local",
+  repoLocation: process.env.REPO_LOCATION as "api" | "local" | 'mongodb',
 };

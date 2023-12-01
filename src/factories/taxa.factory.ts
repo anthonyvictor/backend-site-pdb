@@ -4,13 +4,16 @@ import { TaxaController } from "../controllers/taxa.controller";
 import { EnderecosRepoApi } from "../repositories/api/enderecos.repository";
 import { EnderecosRepoJsondb } from "../repositories/jsondb/enderecos.repository";
 import { TaxaService } from "../services/taxa.service";
+import { EnderecosRepoMongodb } from "../repositories/mongodb/enderecos.repository";
 
 export const makeTaxa = () => {
   const router = Router();
   const controller = new TaxaController(
     new TaxaService(
       environments.repoLocation === "api"
-        ? new EnderecosRepoApi()
+        ? new EnderecosRepoApi(): 
+        environments.repoLocation === 'mongodb' 
+        ? new EnderecosRepoMongodb()
         : new EnderecosRepoJsondb()
     )
   );

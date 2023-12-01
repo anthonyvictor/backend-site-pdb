@@ -10,7 +10,7 @@ import { EnderecosRoutes } from "./enderecos.routes";
 import { BairrosRoutes } from "./bairros.routes";
 import { TaxaRoutes } from "./taxa.routes";
 
-import { HorariosRoutes } from "./horarios.routes";
+// import { HorariosRoutes } from "./horarios.routes";
 import { PedidosRoutes } from "./pedidos.routes";
 import { LojaRoutes } from "./loja.routes";
 
@@ -26,7 +26,7 @@ routes.use("/enderecos", EnderecosRoutes);
 routes.use("/bairros", BairrosRoutes);
 routes.use("/taxa", TaxaRoutes);
 
-routes.use("/horarios", HorariosRoutes);
+// routes.use("/horarios", HorariosRoutes);
 routes.use("/pedidos", PedidosRoutes);
 routes.use("/loja", LojaRoutes);
 

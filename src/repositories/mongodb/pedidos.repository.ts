@@ -8,25 +8,12 @@ export class PedidosRepoMongodb extends Repo<IPedido> {
     let data = [];
     const { id } = dto;
     if (id) {
-      data = await PedidosModel.find({ _id: id }).exec();
+      data = (await PedidosModel.find({ _id: id }).exec()).map(x=>x.toJSON());
     } else {
-      data = await PedidosModel.find().exec();
+      data = (await PedidosModel.find().exec()).map(x=>x.toJSON());
     }
-    const result = data.map(
-      (pedido) =>
-        ({
-          id: pedido._id.toString(),
-          cliente: pedido.cliente,
-          historico: pedido.historico,
-          itens: pedido.itens,
-          posicao: pedido.posicao,
-          previsao: pedido.previsao,
-          tipo: pedido.tipo,
-          endereco: pedido.endereco,
-        } as IPedido)
-    );
-
-    return result;
+  
+    return data;
   }
   async create(item: IPedido) {
     const pedido = await PedidosModel.create(item);
