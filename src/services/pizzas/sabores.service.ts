@@ -27,14 +27,19 @@ export class SaboresService extends Service<IPizzaSabor> {
     );
 
     const _saboresOrdenados = sabores.sort(sortFlavoursByName);
-    //  "brasileira",
-    //        "frango",
-    // "delicia da bahia",
-    //  "da roça",
-    //              "portuguesa",
-    //               "batata palha",
-    //               "agridoce",
-    //              "banana nevada",
+
+    const comFrango = true
+    const comBanana = true
+
+    const frango = comFrango ? [
+      "frango",
+      "granja",
+      "delicia da bahia",
+    ] : []
+
+    const banana = comBanana ? [
+      "banana nevada",
+    ]: []
 
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
@@ -55,10 +60,8 @@ export class SaboresService extends Service<IPizzaSabor> {
               "baiana",
               "napolitana",
               "romeu e julieta",
-              "frango",
-              "granja",
-              "banana nevada",
-              "delicia da bahia",
+              ...frango,
+              ...banana,
             ].some((y) => x.nome.toLowerCase().includes(y))
           )
           .map((x) => ({
