@@ -14,8 +14,5 @@ export const makeLoja = () => {
   router.patch("/", controller.patch);
   // router.delete("/", controller.delete);
 
-  setInterval(() => {
-    repo.delete('')
-  }, 5 * 60 * 1000)
   return router;
 };
