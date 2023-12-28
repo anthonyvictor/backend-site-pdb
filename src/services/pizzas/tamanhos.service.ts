@@ -21,7 +21,6 @@ export class TamanhosService extends Service<IPizzaTamanho> {
       .map((x) => x.valores)
       .flat();
 
-      console.log(data)
     return data.map((t) => ({
       ...t,
       valorMin: valores
