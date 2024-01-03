@@ -3,6 +3,7 @@ import { Controller } from ".";
 import { v4 as uuidv4 } from "uuid";
 import { IPedidosGetDTO } from "../dtos/pedidos/get";
 import { IPedido } from "../types/pedido";
+import { log } from "../util/log";
 
 export class PedidosController extends Controller<IPedido> {
   get = async (req: Request, res: Response) => {
@@ -22,6 +23,7 @@ export class PedidosController extends Controller<IPedido> {
       res.json(result);
     } catch (e) {
       console.error(e);
+      await log(e);
       res.status(500).send("Não foi possível salvar");
     }
   };
