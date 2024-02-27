@@ -13,6 +13,7 @@ import { TaxaRoutes } from "./taxa.routes";
 // import { HorariosRoutes } from "./horarios.routes";
 import { PedidosRoutes } from "./pedidos.routes";
 import { LojaRoutes } from "./loja.routes";
+import { PromoRoutes } from "./promo.routes";
 
 const routes = express();
 
@@ -21,6 +22,7 @@ routes.use("/auth", AuthRoutes);
 routes.use("/pizzas", PizzasRoutes);
 routes.use("/bebidas", BebidasRoutes);
 routes.use("/lanches", LanchesRoutes);
+routes.use("/promo", PromoRoutes);
 
 routes.use("/enderecos", EnderecosRoutes);
 routes.use("/bairros", BairrosRoutes);
