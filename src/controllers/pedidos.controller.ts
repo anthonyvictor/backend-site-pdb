@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { IPedidosGetDTO } from "../dtos/pedidos/get";
 import { IPedido } from "../types/pedido";
 import { log } from "../util/log";
+import { ZodError } from "zod";
 
 export class PedidosController extends Controller<IPedido> {
   get = async (req: Request, res: Response) => {
@@ -18,13 +19,24 @@ export class PedidosController extends Controller<IPedido> {
   post = async (req: Request, res: Response) => {
     try {
       const id = uuidv4();
-      const item = JSON.parse(req.body) as IPedido;
+      const item = req.body as IPedido;
+
       const result = await this.service.create({ ...item, id });
       res.json(result);
     } catch (e) {
       console.error(e);
       await log(e);
-      res.status(500).send("Não foi possível salvar");
+      if (e instanceof ZodError) {
+        res
+          .status(400)
+          .send(
+            `Erro ao salvar: conversão de dados falhou \n${e.issues.map(
+              (x) => `(${x.path} -- ${x.message})`
+            )}`
+          );
+      } else {
+        res.status(500).send("Não foi possível salvar");
+      }
     }
   };
   patch = async (req: Request, res: Response) => {

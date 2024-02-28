@@ -4,6 +4,7 @@ export const log = async (error: any) => {
   try {
     await LogsModel.create({
       error: {
+        date: new Date(),
         stack: (error as Error)?.stack ?? "No Stack",
         message: (error as Error).message,
       },
