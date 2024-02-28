@@ -18,7 +18,7 @@ export class PedidosController extends Controller<IPedido> {
   post = async (req: Request, res: Response) => {
     try {
       const id = uuidv4();
-      const item = req.body as IPedido;
+      const item = JSON.parse(req.body) as IPedido;
       const result = await this.service.create({ ...item, id });
       res.json(result);
     } catch (e) {
