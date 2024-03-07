@@ -33,8 +33,8 @@ export class BebidasService extends Service<IOutro> {
   async find(): Promise<IOutro[]> {
     const data = ((await this.repo.find()) as IOutro[])
       .sort((a, b) => (a.nome > b.nome ? 1 : -1))
-      .sort(this.sortBySize)
-      .sort(this.sortByType);
+      .sort(this.sortByType)
+      .sort(this.sortBySize);
     return data;
   }
 
