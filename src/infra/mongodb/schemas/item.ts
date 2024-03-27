@@ -27,8 +27,10 @@ export const PizzaTamanhoSchema = new Schema<IPizzaTamanho>({
 export const OutroSchema = new Schema<IOutro>({
   nome: { type: String },
   disponivel: { type: Boolean },
+  visivel: { type: Boolean },
   imagemUrl: { type: String },
   valor: { type: Number },
+  vendidos: { type: Number },
 });
 
 export const ItemSchema = new Schema<IItem>({
