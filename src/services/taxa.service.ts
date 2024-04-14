@@ -35,8 +35,6 @@ export class TaxaService extends Service<IEndereco | null> {
     } else {
       const cleanedAddress = clearAddress(rua ?? "");
 
-      console.log(cleanedAddress);
-
       const filteredAddresses = allAddresses
         .sort((a, b) => (a.taxa > b.taxa ? 1 : a.taxa < b.taxa ? -1 : 0))
         // .reverse()

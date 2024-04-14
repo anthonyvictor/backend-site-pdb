@@ -31,6 +31,7 @@ export const OutroSchema = new Schema<IOutro>({
   imagemUrl: { type: String },
   valor: { type: Number },
   vendidos: { type: Number },
+  emoji: { type: String },
 });
 
 export const ItemSchema = new Schema<IItem>({
