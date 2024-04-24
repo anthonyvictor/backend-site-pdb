@@ -4,6 +4,7 @@ import { IPromo } from "../../../types/promo";
 export const PromoSchema = new Schema<IPromo>({
   nome: { type: String, required: true },
   ativa: { type: Boolean, required: true },
+  visivel: { type: Boolean, required: true },
   dias: {
     type: Schema.Types.Mixed,
     validate: {
