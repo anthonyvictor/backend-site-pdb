@@ -26,20 +26,51 @@ export class SaboresService extends Service<IPizzaSabor> {
       id ? e.id === id : true
     );
 
-    const _saboresOrdenados = sabores.sort(sortFlavoursByName);
+    const _saboresOrdenados = sabores
+      // .map((sabor) => {
+      //   const novoSabor = sabor;
+      //   const valores = sabor.valores.map((val) => {
+      //     if (val.tamanhoId === "656a0b4781f555282573eb48") {
+      //       if (val.valor === 18) val.valor = 20;
+      //     }
+      //     if (val.tamanhoId === "656a0b4781f555282573eb49") {
+      //       if (val.valor === 27) {
+      //         val.valor = 30;
+      //       } else if (val.valor === 33) {
+      //         val.valor = 35;
+      //       } else if (val.valor === 34) {
+      //         val.valor = 37;
+      //       }
+      //     }
+      //     if (val.tamanhoId === "656a0b4781f555282573eb4a") {
+      //       if (val.valor === 33) {
+      //         val.valor = 36;
+      //       } else if (val.valor === 35) {
+      //         val.valor = 38;
+      //       }
+      //     }
+      //     if (val.tamanhoId === "656a0b4781f555282573eb4b") {
+      //       if (val.valor === 39) {
+      //         val.valor = 42;
+      //       } else if (val.valor === 42) {
+      //         val.valor = 45;
+      //       }
+      //     }
 
-    const comFrango = true
-    const comBanana = true
+      //     return val;
+      //   });
 
-    const frango = comFrango ? [
-      "frango",
-      "granja",
-      "delicia da bahia",
-    ] : []
+      //   novoSabor.valores = valores;
+      //   return novoSabor;
+      // })
+      .sort(sortFlavoursByName);
 
-    const banana = comBanana ? [
-      "banana nevada",
-    ]: []
+    const comFrango = true;
+    const comBanana = true;
+
+    const frango = comFrango ? ["frango", "granja", "delicia da bahia"] : [];
+
+    const banana = comBanana ? ["banana nevada"] : [];
 
     const saboresOrdenados = !!promocionais
       ? _saboresOrdenados
