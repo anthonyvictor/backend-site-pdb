@@ -9,7 +9,7 @@ export class LanchesService extends Service<IOutro> {
   }
   async find(): Promise<IOutro[]> {
     const data = ((await this.repo.find()) as IOutro[]).sort((a, b) =>
-      a.nome > b.nome ? 1 : -1
+      a.vendidos > b.vendidos ? -1 : 1
     );
     return data;
   }
