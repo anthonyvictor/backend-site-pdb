@@ -8,4 +8,5 @@ export interface IPromo {
     imagemUrl?: string;
     route?: string;
   };
+  taxaMaquininha: boolean;
 }

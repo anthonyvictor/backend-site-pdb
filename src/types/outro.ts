@@ -7,4 +7,5 @@ export interface IOutro {
   visivel: boolean;
   vendidos: number;
   emoji: string;
+  uuid?: string;
 }

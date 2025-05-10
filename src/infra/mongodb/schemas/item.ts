@@ -23,6 +23,7 @@ export const PizzaTamanhoSchema = new Schema<IPizzaTamanho>({
   tamanhoAprox: { type: Number },
   visivel: { type: Boolean },
   ativado: { type: Boolean },
+  uuid: { type: String },
 });
 
 export const OutroSchema = new Schema<IOutro>({
@@ -33,14 +34,17 @@ export const OutroSchema = new Schema<IOutro>({
   valor: { type: Number },
   vendidos: { type: Number },
   emoji: { type: String },
+  uuid: { type: String },
 });
 
 export const ItemSchema = new Schema<IItem>({
   sabores: { type: [PizzaSaborSchema] },
-  tipo: { type: String, enum: ["PIZZA", "BEBIDA", "OUTRO"] },
+  tipo: { type: String, enum: ["pizza", "bebida", "outro"] },
   nome: { type: String },
   tamanho: { type: String },
   observacao: { type: String },
+  imagemUrl: { type: String },
   comboId: { type: String },
+  promoId: { type: String },
   valor: { type: Number, required: true },
 });

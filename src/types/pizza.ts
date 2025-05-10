@@ -3,6 +3,7 @@ export interface IPizzaGrupo {
   nome: string;
   sabores?: Array<IPizzaSabor>;
 }
+
 export interface IPizzaSabor {
   id: string;
   nome: string;
@@ -10,6 +11,7 @@ export interface IPizzaSabor {
   grupoId: string;
   ingredientes: Array<string>;
   valores: Array<IPizzaSaborValor>;
+  uuid?: string;
 }
 export interface IPizzaTamanho {
   id: string;
@@ -20,6 +22,7 @@ export interface IPizzaTamanho {
   maxSabores: number;
   visivel: boolean;
   ativado: boolean;
+  uuid?: string;
 }
 export interface IPizzaSaborValor {
   tamanhoId: string;
